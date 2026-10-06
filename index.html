@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-<title>Catch_Me_Playable_17142</title>
+<title>Catch_Me_Playable_17142_SERIAL</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
 html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000;touch-action:none}
@@ -64,7 +64,7 @@ body{display:flex;align-items:center;justify-content:center;font-family:Arial,sa
 .hint.enter{animation:hintIn .45s cubic-bezier(.2,.9,.3,1) backwards}
 @keyframes hintIn{from{opacity:0;transform:translate(-50%,-50%) translateY(-14px) scale(.92)}to{opacity:1;transform:translate(-50%,-50%)}}
 #hint{width:40%}
-#hint[src*='hint_3.png']{width:50%}
+#hint[src*='hint_3.webp']{width:50%}
 
 /* Target: outer = position, .tPulse = idle pulse, .tBody = hover/press/hit/appear */
 .target{position:absolute;width:29%;aspect-ratio:1;transform:translate(-50%,-50%);z-index:45;cursor:pointer;touch-action:manipulation}
@@ -137,25 +137,25 @@ body{display:flex;align-items:center;justify-content:center;font-family:Arial,sa
 </head>
 <body>
 <div id="game">
-<img id="bgA" class="bg on" src="assets/start_scene.png" data-src="assets/start_scene.png" alt="">
+<img id="bgA" class="bg on" src="assets/start_scene.webp" data-src="assets/start_scene.webp" alt="">
 <img id="bgB" class="bg" alt="">
 <div class="vignette"></div><div id="sweep" class="sweep"></div><div id="hearts"></div>
 
 <div id="start" class="ui">
-<img class="asset title" src="assets/title.png" alt="">
-<img class="asset startHint" src="assets/hint_start.png" alt="">
-<img class="asset counter" src="assets/counter_0_3.png" alt="">
+<img class="asset title" src="assets/title.webp" alt="">
+<img class="asset startHint" src="assets/hint_start.webp" alt="">
+<img class="asset counter" src="assets/counter_0_3.webp" alt="">
 <div class="startGlow"></div>
-<img id="startBtn" class="asset startBtn" src="assets/start_button.png" alt="">
+<img id="startBtn" class="asset startBtn" src="assets/start_button.webp" alt="">
 </div>
 
 <div id="play">
-<img id="hint" class="asset hint" src="assets/hint_1.png" alt="">
-<img id="counter" class="asset counter" src="assets/counter_1_3.png" alt="">
+<img id="hint" class="asset hint" src="assets/hint_1.webp" alt="">
+<img id="counter" class="asset counter" src="assets/counter_1_3.webp" alt="">
 <div id="target" class="target hidden disabled">
 <div class="tPulse">
 <div class="glow"></div><div class="ring"></div><div class="ring"></div><div class="ring"></div>
-<div class="tBody"><img id="targetImg" src="assets/target_1.png" alt=""></div>
+<div class="tBody"><img id="targetImg" src="assets/target_1.webp" alt=""></div>
 </div>
 </div>
 </div>
@@ -163,8 +163,8 @@ body{display:flex;align-items:center;justify-content:center;font-family:Arial,sa
 <div id="particles"></div>
 
 <div id="final">
-<img class="asset finalText" src="assets/final_text.png" alt="">
-<img id="cta" class="asset cta" src="assets/cta_button.png" alt="">
+<img class="asset finalText" src="assets/final_text.webp" alt="">
+<img id="cta" class="asset cta" src="assets/cta_button.webp" alt="">
 </div>
 
 <div id="tHearts"></div>
@@ -180,12 +180,12 @@ body{display:flex;align-items:center;justify-content:center;font-family:Arial,sa
 </div>
 <script>
 const CONFIG={
- CTA_URL:'https://honeytoon.com/comic/redheads-first-ride/prologue',
+ CTA_URL:'https://hanimax.com/serials/red-heads-first-ride/teaser',
  targets:{1:{x:33,y:59},2:{x:77,y:57},3:{x:50,y:63}},
  scenes:{
-  1:{background:'assets/scene_1.png',hint:'assets/hint_1.png',counter:'assets/counter_1_3.png',target:'assets/target_1.png'},
-  2:{background:'assets/scene_2.png',hint:'assets/hint_2.png',counter:'assets/counter_2_3.png',target:'assets/target_2.png'},
-  3:{background:'assets/scene_3.png',hint:'assets/hint_3.png',counter:'assets/counter_3_3.png',target:'assets/target_3.png'}
+  1:{background:'assets/scene_1.webp',hint:'assets/hint_1.webp',counter:'assets/counter_1_3.webp',target:'assets/target_1.webp'},
+  2:{background:'assets/scene_2.webp',hint:'assets/hint_2.webp',counter:'assets/counter_2_3.webp',target:'assets/target_2.webp'},
+  3:{background:'assets/scene_3.webp',hint:'assets/hint_3.webp',counter:'assets/counter_3_3.webp',target:'assets/target_3.webp '}
  },
  transition:420,   // hit -> next scene
  reveal:360,       // scene load -> target appears
@@ -433,7 +433,7 @@ function showFinal(){
  play.classList.remove('active');
  music.pause();try{music.currentTime=0}catch(e){}
  if(soundOn)playSfx(finalMusic,.8);
- setBg('assets/final_scene.png');
+ setBg('assets/final_scene.webp');
  transitionHearts();
  after(()=>{final.classList.add('active');locked=false},220);
 }
@@ -448,7 +448,7 @@ cta.addEventListener('pointerup',e=>{e.preventDefault();e.stopPropagation();open
 cta.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();openCtaUrl()});
 
 /* ---------- preload ---------- */
-const imgs=['start_scene.png','scene_1.png','scene_2.png','scene_3.png','final_scene.png','title.png','hint_start.png','hint_1.png','hint_2.png','hint_3.png','counter_0_3.png','counter_1_3.png','counter_2_3.png','counter_3_3.png','start_button.png','target_1.png','target_2.png','target_3.png','final_text.png','cta_button.png'];
+const imgs=['start_scene.webp','scene_1.webp','scene_2.webp','scene_3.webp','final_scene.webp','title.webp','hint_start.webp','hint_1.webp','hint_2.webp','hint_3.webp','counter_0_3.webp','counter_1_3.webp','counter_2_3.webp','counter_3_3.webp','start_button.webp','target_1.webp','target_2.webp','target_3.webp','final_text.webp','cta_button.webp'];
 let loaded=0;
 imgs.forEach(x=>{const i=new Image();i.onload=i.onerror=()=>{if(++loaded>=imgs.length)after(()=>$('loading').classList.add('hide'),180)};i.src='assets/'+x});
 
